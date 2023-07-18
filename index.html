@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>gul _ gram</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="x-icon" href="salah.png" />
+    <style>
+      .dark-mode {
+        background-color: #222;
+        color: #fff;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .dark-mode-icon,
+      .light-mode-icon {
+        width: 200px;
+        height: 200px;
+      }
+
+      .dark-mode .name {
+        color: red;
+      }
+
+      .light-mode .name {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello, there! this is me, <span class="name">reza gulam</span></h1>
+    </header>
+    <main>
+      <section class="content center-text">
+        <p>This is a simple website with light and dark mode.</p>
+        <p>Click the image to change your theme</p>
+        <p>&#129155;&#129155;</p>
+      </section>
+    </main>
+    <script>
+      function toggleDarkMode() {
+        var body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+
+        // Update button icon
+        var button = document.querySelector("button");
+        if (body.classList.contains("dark-mode")) {
+          button.innerHTML =
+            '<img src="nunez.png" alt="Dark Mode" class="dark-mode-icon">';
+        } else {
+          button.innerHTML =
+            '<img src="salah.png" alt="Light Mode" class="light-mode-icon">';
+        }
+      }
+
+      // Add a button to toggle dark mode
+      var button = document.createElement("button");
+      button.innerHTML =
+        '<img src="salah.png" alt="Light Mode" class="light-mode-icon">';
+      button.addEventListener("click", toggleDarkMode);
+
+      // Add the button to the page
+      document.body.appendChild(button);
+    </script>
+    <footer>
+      <p>&copy; 2024</p>
+    </footer>
+  </body>
+</html>
