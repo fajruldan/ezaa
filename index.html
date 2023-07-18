@@ -2,10 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gul _ gram</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="x-icon" href="salah.png" />    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="x-icon" href="salah.png" />
+    <style>
+      .dark-mode {
+        background-color: #222;
+        color: #fff;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .dark-mode-icon,
+      .light-mode-icon {
+        width: 200px;
+        height: 200px;
+      }
+
+      .dark-mode .name {
+        color: red;
+      }
+
+      .light-mode .name {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
     <header>
