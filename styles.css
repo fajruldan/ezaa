@@ -1,0 +1,18 @@
+/* Styles for desktop and larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Styles for tablets and smaller screens */
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
